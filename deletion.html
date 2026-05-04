@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="ja">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>アカウント削除</title>
+  <style>
+    body {
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Noto Sans JP", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+      line-height: 1.65;
+      margin: 24px;
+      max-width: 900px;
+    }
+
+    h1,
+    h2 {
+      line-height: 1.25
+    }
+
+    .card {
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      padding: 16px;
+      margin: 16px 0;
+    }
+
+    code {
+      background: #f6f6f6;
+      padding: 2px 6px;
+      border-radius: 6px;
+    }
+
+    a {
+      word-break: break-word;
+    }
+
+    .muted {
+      color: #555
+    }
+  </style>
+</head>
+
+<body>
+
+  <nav>
+    <a href="./index.html">プライバシーポリシー</a> |
+    <a href="./terms.html">利用規約</a> |
+    <a href="./about.html">このアプリについて</a> |
+    <a href="./contact.html">お問い合わせ</a> |
+    <a href="./deletion.html">アカウント削除</a>
+  </nav>
+
+  <h1>アカウント削除</h1>
+
+  <div class="card">
+    <p>
+      本ページは、アプリ <strong>TrueSkin</strong> のアカウント削除方法を説明します。
+    </p>
+
+    <h3>アプリ内での削除（推奨）</h3>
+    <ol>
+      <li>アプリにログインします。</li>
+      <li><strong>設定</strong> → <strong>アカウント削除</strong> を選択します。</li>
+      <li>確認画面の指示に従い、削除を実行します。</li>
+    </ol>
+    <p class="muted">
+      ※削除後は元に戻せません。アプリ内に保存されている写真・結果などのデータは端末内（ローカル）から削除されます。
+    </p>
+
+    <h3>削除されるデータ</h3>
+    <ul>
+      <li>認証情報（Cognito上のユーザー）</li>
+      <li>課金状態などの最小限のユーザー情報（DynamoDB上のレコード）</li>
+      <li>端末内（ローカル）に保存されている写真・解析結果等（アプリが管理する範囲）</li>
+    </ul>
+    <p class="muted">
+      ※当アプリはサーバー上に写真や解析結果を保存していません（S3等への保存はありません）。
+    </p>
+
+    <h3>アプリにアクセスできない場合（代替手段）</h3>
+    <p>
+      端末の紛失等によりアプリから削除できない場合は、下記宛にご連絡ください。
+    </p>
+    <p>
+      お問い合わせ先：<a href="mailto:nishimotoworks2025@gmail.com">nishimotoworks2025@gmail.com</a><br />
+      件名例：TrueSkin アカウント削除依頼<br />
+      本文に「登録時のメールアドレス（またはログイン方法）」をご記載ください。
+    </p>
+
+    <h3>削除完了までの期間</h3>
+    <p>
+      削除依頼の受付後、原則として<strong>30日以内</strong>に削除を完了します（通常はより早く完了します）。
+    </p>
+
+    <h3>保持される可能性のある情報</h3>
+    <p class="muted">
+      法令遵守や不正防止のため、最小限のログ情報を一定期間保持する場合があります。
+    </p>
+  </div>
+
+  <p class="muted">
+    最終更新日：2026-01-12
+  </p>
+</body>
+
+</html>
